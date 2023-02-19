@@ -1,0 +1,199 @@
+ol, ul {
+   list-style: none;
+}
+
+input {
+   outline: none;
+}
+
+img {
+   border: 0;
+   max-width: 100%;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+.hidden {
+   display: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+   --bg-default-color: #252427;
+   --bg-default-color-hover: rgba(255, 255, 255, 0.12);
+   --border-radius: 10px;
+}
+
+body {
+   background-color: #121214;
+   color: #fff;
+   font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+   display: flex;
+   width: 100%;
+}
+
+.app {
+   padding: 20px;
+   display: flex;
+   width: 70%;
+   margin: 100px auto;
+   border-radius: var(--border-radius);
+   flex-direction: column;
+   background-color: #252427;
+   position: relative;
+}
+
+.btn-l {
+   margin-left: auto;
+   padding: 10px;
+   border-radius: var(--border-radius);
+   background-color: var(--bg-default-color);
+   border: none;
+   color: inherit;
+   font-size: 0.75rem;
+
+   transition: background ease 0.3s;
+}
+
+.btn-l:hover {
+   background-color: var(--bg-default-color-hover);
+   cursor: pointer;
+   border: none;
+   outline: none;
+}
+
+.btn-l:focus-visible, .btn-l:focus {
+   background-color: var(--bg-default-color-hover);
+   border: none;
+   outline: none;
+}
+
+.add-ticket {
+   position: absolute;
+   top: -50px;
+   right: 0;
+}
+
+.tickets-list {
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+}
+
+.tickets-list__item {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   flex-wrap: wrap;
+}
+
+.ticket {}
+
+.ticket__status {}
+
+.btn-s {
+   background-color: var(--bg-default-color);
+   border: none;
+   color: #fff;
+   font-size: 10px;
+   text-align: center;
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;
+   transition: background ease 0.3s;
+   flex-shrink: 0;
+}
+
+.btn-s:hover {
+   background-color: var(--bg-default-color-hover);
+   cursor: pointer;
+}
+
+.btn-s:focus-visible, .btn-s:focus {
+   background-color: var(--bg-default-color-hover);
+   border: none;
+   outline: none;
+}
+
+.ticket__status {
+   outline: 2px solid #fff;
+}
+
+.ticket__name {
+   flex: 1;
+   margin-left: 20px;
+}
+
+.ticket__date {
+   font-size: 0.65rem;
+}
+
+.ticket__edit {}
+
+.ticket__delete {}
+
+.ticket__discription {
+   flex: 1 1 100%;
+   font-size: 0.75rem;
+}
+
+.form {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   padding: 10px 20px 20px;
+   left: 50%;
+   top: -25%;
+   position: absolute;
+   border-radius: var(--border-radius);
+   transform: translateX(-50%);
+   background-color: var(--bg-default-color);
+   gap: 10px;
+}
+
+.add-form__title {
+   text-align: center;
+   margin-bottom: 15px;
+}
+
+.form__lable {
+   font-size: 0.75rem;
+}
+
+
+.add-form__input {}
+
+.input {
+   font-size: 0.75rem;
+   padding: 5px 10px;
+}
+
+.textarea {
+   font-size: 0.65rem;
+   padding: 5px 10px;
+   resize: none;
+}
+
+.textarea:focus-visible,.input:focus-visible {
+   border-radius: 5px;
+   outline-offset: 3px;
+   outline: 2px solid #fff;
+}
+
+.cancel-btn {}
+
+.btn-l {}
+
+.add-btn {}

@@ -9,6 +9,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'img/[hash][ext][query]'
   },
+  devServer: {
+    port: 9000,
+    open:true,
+    liveReload: true,
+    watchFiles: ['src/**/*'],
+  },
   module: {
     rules: [
       {
