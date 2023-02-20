@@ -10,7 +10,7 @@
 
 <body>
   <div class="container">
-    <div class="app">
+    <div id="app" class="app">
       <button class="add-ticket btn-l">Добавить тикет</button>
       <ul class="tickets-list">
         <li class="tickets-list__item ticket">
@@ -19,31 +19,31 @@
           <time class="ticket__date">12.02.23 19:20</time>
           <button class="ticket__edit btn-s">✎</button>
           <button class="ticket__delete btn-s">&#9587;</button>
-          <p class="ticket__discription ">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+          <p class="ticket__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
             тексты. Путь большой коварных встретил ipsum переписывается наш диких грустный то заголовок последний, жизни
             до однажды свой, точках обеспечивает все осталось.</p>
         </li>
       </ul>
-      <form class="edit-form form">
-        <span class="edit-form__title">Изменить тикет</span>
-        <label for="name" class="edit-form__label form__lable">Краткое описание</label>
-        <input class="edit-form__input input" type="text" name="name" autocomplete="off">
-        <label class="edit-form__label form__lable" name="description">Полное описание</label>
-        <textarea class="edit-form__input textarea" name="description" cols="15" rows="10" maxlength="1000"></textarea>
-        <button class="cancel-btn btn-l">Отменить</button>
-        <button class="add-btn btn-l">Ок</button>
-      </form>
-      <form class="add-form form">
-        <span class="add-form__title">Добавить тикет</span>
-        <label for="name" class="add-form__labe form__lable">Краткое описание</label>
-        <input class="add-form__input input" type="text" name="name" autocomplete="off">
-        <label class="add-form__label form__lable" name="description">Полное описание</label>
-        <textarea class="add-form__input textarea" name="description" cols="15" rows="10" maxlength="1000"></textarea>
-        <button class="cancel-btn btn-l">Отменить</button>
-        <button class="add-btn btn-l">Ок</button>
-      </form>
     </div>
   </div>
+  <!-- <form class="edit-form form">
+    <span class="edit-form__title form-title">Изменить тикет</span>
+    <label for="name" class="edit-form__label form__lable">Краткое описание</label>
+    <input class="edit-form__input input" type="text" name="name" autocomplete="off">
+    <label class="edit-form__label form__lable" name="description">Полное описание</label>
+    <textarea class="edit-form__input textarea" name="description" cols="15" rows="10" maxlength="1000"></textarea>
+    <div class="btn-container"><button class="cancel-btn btn-l">Отменить</button>
+      <button class="add-btn btn-l">Ок</button></div>
+  </form>
+  <form class="add-form form">
+    <span class="add-form__title form-title">Добавить тикет</span>
+    <label for="name" class="add-form__labe form__lable">Краткое описание</label>
+    <input class="add-form__input input" type="text" name="name" autocomplete="off">
+    <label class="add-form__label form__lable" name="description">Полное описание</label>
+    <textarea class="add-form__input textarea" name="description" cols="15" rows="10" maxlength="1000"></textarea>
+    <div class="btn-container"><button class="cancel-btn btn-l">Отменить</button>
+      <button class="add-btn btn-l">Ок</button></div>
+  </form> -->
 </body>
 
 </html>
