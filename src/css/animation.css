@@ -1,0 +1,165 @@
+.slide-in-top {
+	-webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @keyframes slide-in-top {
+   0% {
+     -webkit-transform: translateY(-1000%);
+             transform: translateY(-1000%);
+     opacity: 0;
+   }
+   100% {
+     -webkit-transform: translate(-50%,-50%);;
+             transform: translate(-50%,-50%);;
+     opacity: 1;
+   }
+ }
+
+ .blur {
+   filter: blur(5px);
+}
+
+
+@keyframes ldio-9lpaomuefog {
+  0% { opacity: 1 }
+  100% { opacity: 0 }
+}
+.ldio-9lpaomuefog div {
+  left: 95px;
+  top: 41px;
+  position: absolute;
+  animation: ldio-9lpaomuefog linear 1s infinite;
+  background: #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px / 5px;
+  transform-origin: 5px 59px;
+}.ldio-9lpaomuefog div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -0.9166666666666666s;
+  background: #ffffff;
+}.ldio-9lpaomuefog div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -0.8333333333333334s;
+  background: #ffffff;
+}.ldio-9lpaomuefog div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.75s;
+  background: #ffffff;
+}.ldio-9lpaomuefog div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.6666666666666666s;
+  background: #ffffff;
+}.ldio-9lpaomuefog div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.5833333333333334s;
+  background: #ffffff;
+}.ldio-9lpaomuefog div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.5s;
+  background: #ffffff;
+}.ldio-9lpaomuefog div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.4166666666666667s;
+  background: #ffffff;
+}.ldio-9lpaomuefog div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.3333333333333333s;
+  background: #ffffff;
+}.ldio-9lpaomuefog div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.25s;
+  background: #ffffff;
+}.ldio-9lpaomuefog div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.16666666666666666s;
+  background: #ffffff;
+}.ldio-9lpaomuefog div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.08333333333333333s;
+  background: #ffffff;
+}.ldio-9lpaomuefog div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+  background: #ffffff;
+}
+.loading-spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+}
+.ldio-9lpaomuefog {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; 
+}
+.ldio-9lpaomuefog div { box-sizing: content-box; }
+
+
+.first-ticket{
+    width: 20%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: absolute;
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    border-radius: 50%;
+}
+
+.first-ticket:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 50%;
+}
+
+
+.first-ticket:hover:before ,.first-ticket:focus-visible:before {
+    opacity: 1;
+}
+
+
+.first-ticket:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #252427;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
