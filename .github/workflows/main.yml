@@ -1,11 +1,8 @@
 name: to do
 
-on:
-  release:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [release , pull_request]
 
+# Down scope as necessary via https://docs.github.com/en/actions/security-guides/automatic-token-authentication#modifying-the-permissions-for-the-github_token
 permissions:
   checks: write
   contents: write
